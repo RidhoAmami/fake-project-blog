@@ -3,7 +3,7 @@
 @section('container')
     <article>
         <h2>{{ $post->title }}</h2>
-        <p>By. Ridho Amami in <a href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a></p>
+        <p>By. <a href="#">{{ $post-user->name }}</a> <a href="/categories/{{ $post->category->slug }}">{{ $post->category->name }}</a></p>
         <p>
             {!! $post->body !!}
         </p>
